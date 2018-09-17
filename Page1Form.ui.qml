@@ -42,14 +42,14 @@ Page {
         Button {
             id: btnOpDel
             text: qsTr("DEL")
-            font.pointSize: parent.height / 14
+            font.pointSize: parent.height / 16
             width: parent.width / 5
             height: parent.height / 4
         }
         Button {
             id: btnOpAc
             text: qsTr("AC")
-            font.pointSize: parent.height / 14
+            font.pointSize: parent.height / 16
             width: parent.width / 5
             height: parent.height / 4
         }
@@ -76,7 +76,7 @@ Page {
         }
         Button {
             id: btnOpMul
-            text: qsTr("x")
+            text: qsTr("*")
             font.pointSize: parent.height / 8
             width: parent.width / 5
             height: parent.height / 4
@@ -141,14 +141,14 @@ Page {
         Button {
             id: btnOpExp
             text: qsTr("EXP")
-            font.pointSize: parent.height / 14
+            font.pointSize: parent.height / 16
             width: parent.width / 5
             height: parent.height / 4
         }
         Button {
             id: btnOpAns
             text: qsTr("ANS")
-            font.pointSize: parent.height / 14
+            font.pointSize: parent.height / 16
             width: parent.width / 5
             height: parent.height / 4
         }
@@ -156,7 +156,7 @@ Page {
             id: btnOpExe
             text: qsTr("EXE")
             flat: false
-            font.pointSize: parent.height / 14
+            font.pointSize: parent.height / 16
             width: parent.width / 5
             height: parent.height / 4
         }
@@ -203,7 +203,35 @@ Page {
         onClicked: txtDisplay.text = txtDisplay.text + "9"
     }
     Connections {
+        target: btnNumPoint
+        onClicked: txtDisplay.text = txtDisplay.text + "."
+    }
+    Connections {
+        target: btnOpMul
+        onClicked: txtDisplay.text = txtDisplay.text + "*"
+    }
+    Connections {
+        target: btnOpDiv
+        onClicked: txtDisplay.text = txtDisplay.text + "/"
+    }
+    Connections {
+        target: btnOpMinus
+        onClicked: txtDisplay.text = txtDisplay.text + "-"
+    }
+    Connections {
+        target: btnOpPlus
+        onClicked: txtDisplay.text = txtDisplay.text + "+"
+    }
+    Connections {
         target: btnOpDel
         onClicked: txtDisplay.text = txtDisplay.text.substring(0, txtDisplay.text.length-1)
+    }
+    Connections {
+        target: btn
+        onClicked: txtDisplay.text = txtDisplay.text + "."
+    }
+    Connections {
+        target: btnOpAc
+        onClicked: txtDisplay.text = ""
     }
 }
