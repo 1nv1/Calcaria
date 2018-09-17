@@ -19,8 +19,11 @@ ApplicationWindow {
 
         Page1Form {
         }
-
         Page2Form {
+        }
+        Page3Form {
+        }
+        Page4Form {
         }
     }
 
@@ -48,6 +51,16 @@ ApplicationWindow {
         TabButton {
             height: 40
             text: qsTr("Extended")
+            font.pixelSize: 24
+        }
+        TabButton {
+            height: 40
+            text: qsTr("Special")
+            font.pixelSize: 24
+        }
+        TabButton {
+            height: 40
+            text: qsTr("About")
             font.pixelSize: 24
         }
     }
