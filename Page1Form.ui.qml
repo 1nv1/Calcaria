@@ -164,78 +164,79 @@ Page {
 
     Connections {
         target: btnOpExe
-        onClicked: submitTextDisplay(txtDisplay.text)
+        onClicked: txtOutput.text = _qml2cpp.handleSubmitTextDisplay(
+                       txtInput.text)
     }
     Connections {
         target: btnNum0
-        onClicked: txtDisplay.text = txtDisplay.text + "0"
+        onClicked: txtInput.text = txtInput.text + "0"
     }
     Connections {
         target: btnNum1
-        onClicked: txtDisplay.text = txtDisplay.text + "1"
+        onClicked: txtInput.text = txtInput.text + "1"
     }
     Connections {
         target: btnNum2
-        onClicked: txtDisplay.text = txtDisplay.text + "2"
+        onClicked: txtInput.text = txtInput.text + "2"
     }
     Connections {
         target: btnNum3
-        onClicked: txtDisplay.text = txtDisplay.text + "3"
+        onClicked: txtInput.text = txtInput.text + "3"
     }
     Connections {
         target: btnNum4
-        onClicked: txtDisplay.text = txtDisplay.text + "4"
+        onClicked: txtInput.text = txtInput.text + "4"
     }
     Connections {
         target: btnNum5
-        onClicked: txtDisplay.text = txtDisplay.text + "5"
+        onClicked: txtInput.text = txtInput.text + "5"
     }
     Connections {
         target: btnNum6
-        onClicked: txtDisplay.text = txtDisplay.text + "6"
+        onClicked: txtInput.text = txtInput.text + "6"
     }
     Connections {
         target: btnNum7
-        onClicked: txtDisplay.text = txtDisplay.text + "7"
+        onClicked: txtInput.text = txtInput.text + "7"
     }
     Connections {
         target: btnNum8
-        onClicked: txtDisplay.text = txtDisplay.text + "8"
+        onClicked: txtInput.text = txtInput.text + "8"
     }
     Connections {
         target: btnNum9
-        onClicked: txtDisplay.text = txtDisplay.text + "9"
+        onClicked: txtInput.text = txtInput.text + "9"
     }
     Connections {
         target: btnNumPoint
-        onClicked: txtDisplay.text = txtDisplay.text + "."
+        onClicked: txtInput.text = txtInput.text + "."
     }
     Connections {
         target: btnOpMul
-        onClicked: txtDisplay.text = txtDisplay.text + "*"
+        onClicked: txtInput.text = txtInput.text + "*"
     }
     Connections {
         target: btnOpDiv
-        onClicked: txtDisplay.text = txtDisplay.text + "/"
+        onClicked: txtInput.text = txtInput.text + "/"
     }
     Connections {
         target: btnOpMinus
-        onClicked: txtDisplay.text = txtDisplay.text + "-"
+        onClicked: txtInput.text = txtInput.text + "-"
     }
     Connections {
         target: btnOpPlus
-        onClicked: txtDisplay.text = txtDisplay.text + "+"
+        onClicked: txtInput.text = txtInput.text + "+"
     }
     Connections {
         target: btnOpDel
-        onClicked: txtDisplay.text = txtDisplay.text.substring(0, txtDisplay.text.length-1)
-    }
-    Connections {
-        target: btnNumPoint
-        onClicked: txtDisplay.text = txtDisplay.text + "."
+        onClicked: txtInput.text = txtInput.text.substring(
+                       0, txtInput.text.length - 1)
     }
     Connections {
         target: btnOpAc
-        onClicked: txtDisplay.text = ""
+        onClicked: {
+            txtInput.text = ""
+            txtOutput.text = ""
+        }
     }
 }

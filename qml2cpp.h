@@ -3,7 +3,9 @@
 
 #include <QObject>
 #include <QDebug>
+extern "C" {
 #include "tinyexpr.h"
+}
 
 class Qml2Cpp : public QObject
 {
@@ -12,8 +14,7 @@ public:
     explicit Qml2Cpp(QObject *parent = 0);
 
 public slots:
-    void handleSubmitTextDisplay(const QString& in);
-
+    QString handleSubmitTextDisplay(const QString& in);
 };
 
 #endif

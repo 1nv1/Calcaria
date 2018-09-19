@@ -31,15 +31,35 @@ ApplicationWindow {
     }
 
     TextInput {
-        id: txtDisplay
+        id: txtInput
         x: 0
         y: 0
         width: parent.width
-        height: 150
+        height: 74
         color: "#005f72"
         text: qsTr("")
         horizontalAlignment: Text.AlignRight
-        font.pixelSize: height / 2
+        font.pixelSize: height - 2
+        MouseArea {
+            anchors.fill: parent
+            // Avoid android keyboard
+            onClicked: {
+                forceActiveFocus(Qt.MouseFocusReason);
+                Qt.inputMethod.hide();
+            }   // onClicked
+        }   // MouseArea
+    }
+
+    TextInput {
+        id: txtOutput
+        x: 0
+        y: 75
+        width: parent.width
+        height: 74
+        color: "#005f72"
+        text: qsTr("")
+        horizontalAlignment: Text.AlignRight
+        font.pixelSize: height - 2
         MouseArea {
             anchors.fill: parent
             // Avoid android keyboard
@@ -52,25 +72,26 @@ ApplicationWindow {
 
     footer: TabBar {
         id: tabBar
+        height: 1
         currentIndex: swipeView.currentIndex
 
         TabButton {
-            height: 40
+            height: 0
             text: qsTr("Basic")
             font.pixelSize: 24
         }
         TabButton {
-            height: 40
+            height: 0
             text: qsTr("Extended")
             font.pixelSize: 24
         }
         TabButton {
-            height: 40
+            height: 0
             text: qsTr("Special")
             font.pixelSize: 24
         }
         TabButton {
-            height: 40
+            height: 0
             text: qsTr("About")
             font.pixelSize: 24
         }
