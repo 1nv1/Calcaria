@@ -2,11 +2,14 @@ import QtQuick 2.11
 import QtQuick.Controls 2.4
 
 ApplicationWindow {
+    id: root
     visible: true
     width: 640
     height: 480
     color: "#d3d7cf"
     title: qsTr("Tabs")
+
+    signal submitTextDisplay(string msg)
 
     SwipeView {
         id: swipeView
@@ -37,6 +40,14 @@ ApplicationWindow {
         text: qsTr("")
         horizontalAlignment: Text.AlignRight
         font.pixelSize: height / 2
+        MouseArea {
+            anchors.fill: parent
+            // Avoid android keyboard
+            onClicked: {
+                forceActiveFocus(Qt.MouseFocusReason);
+                Qt.inputMethod.hide();
+            }   // onClicked
+        }   // MouseArea
     }
 
     footer: TabBar {

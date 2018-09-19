@@ -163,6 +163,10 @@ Page {
     }
 
     Connections {
+        target: btnOpExe
+        onClicked: submitTextDisplay(txtDisplay.text)
+    }
+    Connections {
         target: btnNum0
         onClicked: txtDisplay.text = txtDisplay.text + "0"
     }
@@ -227,7 +231,7 @@ Page {
         onClicked: txtDisplay.text = txtDisplay.text.substring(0, txtDisplay.text.length-1)
     }
     Connections {
-        target: btn
+        target: btnNumPoint
         onClicked: txtDisplay.text = txtDisplay.text + "."
     }
     Connections {
