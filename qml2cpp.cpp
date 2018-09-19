@@ -10,11 +10,10 @@ Qml2Cpp::Qml2Cpp(QObject *parent) :
 
 QString Qml2Cpp::handleSubmitTextDisplay(const QString &in)
 {
+    int err;
     QByteArray ba = in.toLatin1();
     char *expr = ba.data();
     double res;
-    qDebug() << "c++: HandleTextField::handleSubmitTextField:" << in;
-    res = te_interp(expr, 0);
-    qDebug() << res;
+    res = te_interp(expr, &err);
     return(QString::number(res));
 }

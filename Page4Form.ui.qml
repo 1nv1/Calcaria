@@ -5,7 +5,7 @@ Page {
     width: 600
     height: 400
     Label {
-        text: qsTr("Simple calculator for Android devices using Qt 5.11")
+        text: qsTr("Simple calculator using Qt 5.11\n- nelson.lombardo@gmail.com -")
         anchors.centerIn: parent
     }
 }

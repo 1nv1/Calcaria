@@ -9,8 +9,6 @@ ApplicationWindow {
     color: "#d3d7cf"
     title: qsTr("Tabs")
 
-    signal submitTextDisplay(string msg)
-
     SwipeView {
         id: swipeView
         anchors.rightMargin: 0
@@ -39,7 +37,8 @@ ApplicationWindow {
         color: "#005f72"
         text: qsTr("")
         horizontalAlignment: Text.AlignRight
-        font.pixelSize: height - 2
+        wrapMode: Text.Wrap
+        font.pixelSize: Math.round(height * 0.4)
         MouseArea {
             anchors.fill: parent
             // Avoid android keyboard
@@ -59,7 +58,8 @@ ApplicationWindow {
         color: "#005f72"
         text: qsTr("")
         horizontalAlignment: Text.AlignRight
-        font.pixelSize: height - 2
+        wrapMode: Text.Wrap
+        font.pixelSize: Math.round(height * 0.8)
         MouseArea {
             anchors.fill: parent
             // Avoid android keyboard

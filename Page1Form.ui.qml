@@ -229,8 +229,7 @@ Page {
     }
     Connections {
         target: btnOpDel
-        onClicked: txtInput.text = txtInput.text.substring(
-                       0, txtInput.text.length - 1)
+        onClicked: txtInput.text = txtInput.text.substring(0, txtInput.text.length - 1)
     }
     Connections {
         target: btnOpAc

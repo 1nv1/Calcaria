@@ -19,9 +19,5 @@ int main(int argc, char *argv[])
 
     engine.rootContext()->setContextProperty("_qml2cpp", &qml2cpp);
 
-    //QObject *winCalcaria = engine.rootObjects().first();
-
-    // connect our QML signal to our C++ slot
-    //QObject::connect(winCalcaria, SIGNAL(submitTextDisplay(QString)), &qml2cpp, SLOT(handleSubmitTextDisplay(QString)));
     return app.exec();
 }
