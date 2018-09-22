@@ -15,11 +15,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         tinyexpr.c \
-    qml2cpp.cpp
+        qml2cpp.cpp
 
 HEADERS += \
         tinyexpr.h \
-    qml2cpp.h
+        qml2cpp.h
 
 RESOURCES += qml.qrc
 

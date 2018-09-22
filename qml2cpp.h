@@ -2,7 +2,6 @@
 #define QML2CPP_H
 
 #include <QObject>
-#include <QDebug>
 extern "C" {
 #include "tinyexpr.h"
 }
@@ -10,11 +9,17 @@ extern "C" {
 class Qml2Cpp : public QObject
 {
     Q_OBJECT
+private:
+    QString eqStr;
+    short eqLenOp[256];
+    short eqLen;
 public:
-    explicit Qml2Cpp(QObject *parent = 0);
-
+    explicit Qml2Cpp(QObject *parent = nullptr);
 public slots:
     QString handleSubmitTextDisplay(const QString& in);
+    QString trackingStringEquation(const QString& in, short len);
+    QString removeLastOperatorEquation();
+    void removeAllEquation();
 };
 
 #endif

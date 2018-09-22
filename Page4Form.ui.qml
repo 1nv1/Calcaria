@@ -5,7 +5,13 @@ Page {
     width: 600
     height: 400
     Label {
-        text: qsTr("Simple calculator using Qt 5.11\n- nelson.lombardo@gmail.com -")
+        width: 206
+        height: 39
+        text: qsTr("Very Simple Calculator nelson.lombardo@gmail.com")
+        anchors.verticalCenterOffset: 1
+        anchors.horizontalCenterOffset: 0
+        horizontalAlignment: Text.AlignHCenter
+        wrapMode: Text.WordWrap
         anchors.centerIn: parent
     }
 }
