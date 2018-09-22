@@ -22,10 +22,6 @@ ApplicationWindow {
         }
         Page2Form {
         }
-        Page3Form {
-        }
-        Page4Form {
-        }
     }
 
     TextInput {

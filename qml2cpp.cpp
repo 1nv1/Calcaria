@@ -22,7 +22,13 @@ QString Qml2Cpp::handleSubmitTextDisplay(const QString &in)
     double res;
     if(strcmp(expr, "") != 0) {
         res = te_interp(expr, &err);
-        return(QString::number(res));
+        if(!err) {
+            // Not error
+            return(QString::number(res));
+        } else {
+            // Error
+            return("Error at: " + QString(QChar(expr[err-1])));
+        }
     } else {
         return(QString::fromUtf8(""));
     }
