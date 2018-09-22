@@ -21,141 +21,141 @@ Page {
             id: btnOpOpenBracket
             text: qsTr("(")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpCloseBracket
             text: qsTr(")")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpExponentiation2
             text: qsTr("x²")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpExponentiation
             text: qsTr("xⁿ")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpRadication
             text: qsTr("²√")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpLogarithm
             text: qsTr("log")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpLogarithmNatural
             text: qsTr("ln")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpExponentiation10
             text: qsTr("10ⁿ")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpExponentiationE
             text: qsTr("eⁿ")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpFac
             text: qsTr("fac")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpModulus
             text: qsTr("%")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpAbs
             text: qsTr("abs")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpSin
             text: qsTr("sin")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpCos
             text: qsTr("cos")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpTan
             text: qsTr("tan")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnNumPi
             text: qsTr("π")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpAsin
             text: qsTr("asin")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpAcos
             text: qsTr("acos")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpAtan
             text: qsTr("atan")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnNumE
             text: qsTr("e")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
     }
 

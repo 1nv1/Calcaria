@@ -14,12 +14,11 @@ ApplicationWindow {
         anchors.rightMargin: 0
         anchors.bottomMargin: 0
         anchors.leftMargin: 0
-        anchors.topMargin: 155
+        anchors.topMargin: Math.round(root.height / 3)
         anchors.fill: parent
         currentIndex: tabBar.currentIndex
 
         Page1Form {
-            height: 323
         }
         Page2Form {
         }
@@ -30,12 +29,35 @@ ApplicationWindow {
         x: 0
         y: 0
         width: parent.width
-        height: 74
+        height: Math.round(root.height * (1/3) * (3/4))
         color: "#005f72"
-        text: qsTr("")
+        text: qsTr("Very Simple Calculator")
         horizontalAlignment: Text.AlignRight
         wrapMode: Text.Wrap
-        font.pixelSize: Math.round(height * 0.4)
+        font.pixelSize: Math.round(height * 0.2)
+        MouseArea {
+            anchors.fill: parent
+            // Avoid android keyboard
+            onClicked: {
+                forceActiveFocus(Qt.MouseFocusReason);
+                Qt.inputMethod.hide();
+            }   // onClicked
+        }
+
+        // MouseArea
+    }
+
+    TextInput {
+        id: txtOutput
+        x: 0
+        y: Math.round(root.height * (1/3) * (3/4))
+        width: parent.width
+        height: Math.round(root.height * (1/3) * (1/4))
+        color: "#005f72"
+        text: qsTr("")
+        renderType: Text.NativeRendering
+        horizontalAlignment: Text.AlignLeft
+        font.pixelSize: Math.round(height * 0.9)
         MouseArea {
             anchors.fill: parent
             // Avoid android keyboard
@@ -46,26 +68,7 @@ ApplicationWindow {
         }   // MouseArea
     }
 
-    TextInput {
-        id: txtOutput
-        x: 0
-        y: 75
-        width: parent.width
-        height: 74
-        color: "#005f72"
-        text: qsTr("")
-        horizontalAlignment: Text.AlignRight
-        wrapMode: Text.Wrap
-        font.pixelSize: Math.round(height * 0.8)
-        MouseArea {
-            anchors.fill: parent
-            // Avoid android keyboard
-            onClicked: {
-                forceActiveFocus(Qt.MouseFocusReason);
-                Qt.inputMethod.hide();
-            }   // onClicked
-        }   // MouseArea
-    }
+
 
     footer: TabBar {
         id: tabBar

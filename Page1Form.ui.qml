@@ -22,142 +22,142 @@ Page {
             id: btnNum7
             text: qsTr("7")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnNum8
             text: qsTr("8")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnNum9
             text: qsTr("9")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpExe
             text: qsTr("EXE")
             flat: false
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnNum4
             text: qsTr("4")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnNum5
             text: qsTr("5")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnNum6
             text: qsTr("6")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpAc
             text: qsTr("AC")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnNum1
             text: qsTr("1")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnNum2
             text: qsTr("2")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnNum3
             text: qsTr("3")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpDel
             text: qsTr("DEL")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpAns
             text: qsTr("ANS")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnNum0
             text: qsTr("0")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnNumPoint
             text: qsTr(".")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpExp
             text: qsTr("EXP")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpPlus
             text: qsTr("+")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpMinus
             text: qsTr("-")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpMul
             text: qsTr("*")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
         Button {
             id: btnOpDiv
             text: qsTr("/")
             font.pointSize: parent.height / 14
-            width: parent.width / 4
-            height: parent.height / 5
+            width: Math.round(parent.width / 4) - 2
+            height: Math.round(parent.height / 5) - 2
         }
     }
 
