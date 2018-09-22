@@ -19,6 +19,7 @@ ApplicationWindow {
         currentIndex: tabBar.currentIndex
 
         Page1Form {
+            height: 323
         }
         Page2Form {
         }
@@ -70,26 +71,5 @@ ApplicationWindow {
         id: tabBar
         height: 1
         currentIndex: swipeView.currentIndex
-
-        TabButton {
-            height: 0
-            text: qsTr("Basic")
-            font.pixelSize: 24
-        }
-        TabButton {
-            height: 0
-            text: qsTr("Extended")
-            font.pixelSize: 24
-        }
-        TabButton {
-            height: 0
-            text: qsTr("Special")
-            font.pixelSize: 24
-        }
-        TabButton {
-            height: 0
-            text: qsTr("About")
-            font.pixelSize: 24
-        }
     }
 }

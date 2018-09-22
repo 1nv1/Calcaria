@@ -237,4 +237,11 @@ Page {
             _qml2cpp.removeAllEquation()
         }
     }
+    Connections {
+        target: btnOpAns
+        onClicked: {
+            txtOutput.text = ""
+            txtInput.text = _qml2cpp.putLastEquation()
+        }
+    }
 }
